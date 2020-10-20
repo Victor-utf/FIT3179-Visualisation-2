@@ -5,8 +5,8 @@
   "height": 600,
   "projection": {"type": "equirectangular"},
   "data": {
-    "url": "https://github.com/Victor-utf/FIT3179-Visualisation-2/blob/main/worldMap.geo.json",
-    "format": {"type": "topojson", "feature": "worldMap.geo"}
+    "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/worldMap.geo.json",
+    "format": {"type": "topojson", "feature": "custom"}
   },
   "transform": [
     {
