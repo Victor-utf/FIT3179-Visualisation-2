@@ -13,16 +13,17 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://github.com/Victor-utf/FIT3179-Visualisation-2/blob/main/Fortune%20500%20Global%20List%202020_Someka_V1_pureData.csv"
+          "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/Fortune%20500%20Global%20List%202020_Someka_V1_pureData.csv"
          },
          "key": "Country",
-         "fields": ["Rank"]
+         "fields": ["Revenue"]
        }
     },
     {
       "aggregate": [{
-        "op": "count",
-        "as": "counters"
+        "op": "sum", 
+        "field": "Revenue
+        "as": "Totals"
        }],
        "groupby": ["Country"]
      }
@@ -30,12 +31,12 @@
    "mark": {"type": "geoshape"},
    "encoding": {
     "color": {
-      "field": "counters",
+      "field": "Totals",
       "type": "quantitative"
     },
     "tooltip" : [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Rank", "type": "quantitative"}
+      {"field": "Totals", "type": "quantitative"}
     ]
   }
 }
