@@ -22,7 +22,7 @@
     {
       "aggregate": [{
         "op": "sum", 
-        "field": "Revenue
+        "field": "Revenue",
         "as": "Totals"
        }],
        "groupby": ["Country"]
