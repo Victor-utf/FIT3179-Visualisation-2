@@ -10,19 +10,19 @@
   },
   "transform": [
     {
-      "lookup": "properties.NAME",
+      "lookup": "properties.name",
       "from": {
         "data": {
           "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/Fortune%20500%20Global%20List%202020_Someka_V1_pureData.csv"
          },
          "key": "Country",
-         "fields": ["Revenue"]
+         "fields": ["Revenues", "Country"]
        }
     },
     {
       "aggregate": [{
         "op": "sum", 
-        "field": "Revenue",
+        "field": "Revenues",
         "as": "Totals"
        }],
        "groupby": ["Country"]
@@ -35,7 +35,7 @@
       "type": "quantitative"
     },
     "tooltip" : [
-      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "properties.name", "type": "nominal", "title": "Country"},
       {"field": "Totals", "type": "quantitative"}
     ]
   }
