@@ -31,7 +31,8 @@
    "mark": {"type": "geoshape"},
    "encoding": {
     "color": {
-      "field": "Totals",
+      "aggregate": "count",
+      "field": "Country",
       "type": "quantitative"
     },
     "tooltip" : [
@@ -40,4 +41,4 @@
     ]
   }
 }
-        
+// Doesn't work as lookup associates only a single set of values from the secondary data, for each item in the key
