@@ -16,15 +16,27 @@
           "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/Fortune%20500%20Global%20List%202020_Someka_V1_pureData.csv"
          },
          "key": "Country",
-         "fields": ["Number of Employees"]
+         "fields": ["Number_of_Employees"]
        }
-    }
+    },
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/count_by_Country.csv"
+         },
+         "key": "Country",
+         "fields": ["Population"]
+       }
+    },
+    {
+    "calculate": "datum.
    ],
    "mark": {"type": "geoshape"},
    "encoding": {
     "color": {
       "field": {
-        "condition" {
+        "calc" {
           "datum['Country'] == '
         }
       },
