@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 600,
+  "title": "Profits vs. Number of employees in the Fortune 500",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/Fortune%20500%20Global%20List%202020_Someka_V1_pureData.csv"
+  },
+  "transform": [
+    {
+      "lookup": "Country",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/Count_by_country.csv"
+         },
+         "key": "Country",
+         "fields": ["Continent"]
+       }
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "aggregate": "sum", "field": "Revenues",
+      "title": "Revenue"
+    },
+    "x": {"field": "Continent", "type": "nominal" },
+    "color" : {
+      "field": "Country",
+      "type": "nominal"
+    }
+  }
+}
