@@ -4,14 +4,22 @@
   "height": 600,
   "title": "Profits vs. Number of employees in the Fortune 500",
   "data": {
-    "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/Fortune%20500%20Global%20List%202020_Someka_V1_pureData.csv"
+    "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/data/Fortune%20500%20Global%20List%202020_Someka_V1_pureData.csv"
   },
   "transform": [
+    {
+      "aggregate": [{
+        "op": "sum",
+        "field": "Revenues",
+        "as": "newRevenue"
+      }],
+      "groupby": ["Country"]
+    },
     {
       "lookup": "Country",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/Count_by_country.csv"
+          "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/data/Count_by_country.csv"
          },
          "key": "Country",
          "fields": ["Continent"]
@@ -20,14 +28,35 @@
   ],
   "mark": "bar",
   "encoding": {
+    "x": {"field": "Country", "type": "nominal", "sort": "-y"},
     "y": {
-      "aggregate": "sum", "field": "Revenues",
-      "title": "Revenue"
+      "field": "newRevenue",
+      "type": "quantitative",
+      "axis": {"tickCount": 3},
+      "scale": {"type": "log", "domain": [10000, 10000000]}
     },
-    "x": {"field": "Continent", "type": "nominal" },
-    "color" : {
-      "field": "Country",
-      "type": "nominal"
-    }
-  }
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "North America",
+          "South America",
+          "Asia",
+          "Europe",
+          "Oceania",
+          "Middle East"
+        ],
+        "range": [
+          "#66c2a5",
+          "#fc8d62",
+          "#8da0cb",
+          "#aa5555",
+          "#cc55cc",
+          "#777777"
+        ]
+        }
+      }
+    } 
 }
+
