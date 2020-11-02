@@ -4,7 +4,7 @@
   "height": 600,
   "title": "Profits vs. Number of employees in the Fortune 500",
   "data": {
-    "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/Fortune%20500%20Global%20List%202020_Someka_V1_pureData.csv"
+    "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/data/Fortune%20500%20Global%20List%202020_Someka_V1_pureData.csv"
   },
   "params": [{
     "name": "Select_country",
