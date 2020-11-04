@@ -6,31 +6,54 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-4ZPLezkTZTsojWFhpdFembdzFudphhoOzIunR1wH6g1WQDzCAiPvDyitaK67mp0+" crossorigin="anonymous">
   <title>FIT3179 Visualisation 2</title>
   </head>
   
   <body>
     <h1>Companies in the Fortune 500</h1>
     
-    <p> Although China and the US have the same number of companies in the Fortune 500, the US employs a significantly fewer proportion of its population in these companies. </p>
-    <div class="center" id="vis1"></div>
-    <script type="text/javascript">
-      var code1 = "js/finalMap.json"
-      vegaEmbed("#vis1", code1).then(function(result) {}).catch(console.error);
-    </script>
+    <div class="pure-g">
+      <div class="blank pure-u-1-4"></div>
+      <div class="pure-u-1-4">
+        <div id="vis1"></div>
+        <script type="text/javascript">
+          var code1 = "js/finalMap.json"
+          vegaEmbed("#vis1", code1).then(function(result) {}).catch(console.error);
+        </script>
+      </div>
+      <div class="pure-u-1-4"><p> Although China and the US have the same number of companies in the Fortune 500, the US employs a significantly fewer proportion of its population in these companies. </p>
+      </div>
+      <div class="blank pure-u-1-4"></div>
+    </div>
        
-    <div class="center" id="vis2"></div>
-    <script type="text/javascript">
-      var code2 = "js/Chart_NumEmployees.json"
-      vegaEmbed("#vis2", code2).then(function(result) {}).catch(console.error);
-    </script>
+   <div class="pure-g">
+    <div class="blank pure-u-1-4"></div>
+    <div class="pure-u-1-4">
+      <div id="vis2"></div>
+      <script type="text/javascript">
+        var code2 = "js/Chart_NumEmployees.json"
+        vegaEmbed("#vis2", code2).then(function(result) {}).catch(console.error);
+      </script>
+    </div>
+      <div class="pure-u-1-4"><p> Test </p>
+      </div>
+      <div class="blank pure-u-1-4"></div>
+    </div>
     
-    <p> Most continents companies are dominated by those of a single country, such as the US in North America and China in Asia. </p>
-   
-    <div class="center" id="vis3"></div>
-    <script type="text/javascript">
-      var code3 = "js/Group_continents.json"
-      vegaEmbed("#vis3", code3).then(function(result) {}).catch(console.error);
-    </script>
+    <div class="pure-g">
+      <div class="blank pure-u-1-4"></div>
+      <div class="pure-u-1-4">   
+        <div id="vis3"></div>
+        <script type="text/javascript">
+          var code3 = "js/Group_continents.json"
+          vegaEmbed("#vis3", code3).then(function(result) {}).catch(console.error);
+        </script>
+      </div>
+      <div class="pure-u-1-4"><p> Most continents companies are dominated by those of a single country, such as the US in North America and China in Asia. </p>
+      </div>
+      <div class="blank pure-u-1-4"></div>
+    </div>
+    
   </body>
 </html>
