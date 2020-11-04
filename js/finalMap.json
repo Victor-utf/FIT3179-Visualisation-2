@@ -26,15 +26,15 @@
           "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/Fortune%20500%20Global%20List%202020_Someka_V1_pureData.csv"
          },
          "key": "Country",
-         "fields": ["Number_of_employees"]
+         "fields": ["Revenues"]
        }
     }
   ],
    "mark": {"type": "geoshape"},
    "encoding": {
       "color": {
-        "field": "Number_of_employees",      
-        "type": "quantitative"
+        "condition": {"test": "datum['Revenues'] > 0", "field": "Revenues"},
+        "value": "grey"
       },
       "tooltip" : [
         {"field": "properties.name", "type": "nominal", "title": "Country"},
