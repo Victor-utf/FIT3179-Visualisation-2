@@ -1,6 +1,6 @@
 body {
   background-color: #ffffee
 }
-.center {
-  text-align: center;
+.blank {
+  background: rgb(112, 135, 153);
 }
