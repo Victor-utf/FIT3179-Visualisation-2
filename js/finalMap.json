@@ -13,7 +13,7 @@
       "lookup": "properties.name",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/Count_by_country.csv"
+          "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/data/Count_by_country.csv"
          },
          "key": "Country",
          "fields": ["Population"]
