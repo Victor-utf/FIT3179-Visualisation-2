@@ -108,7 +108,7 @@ Rank,Company Name,Country,Number_of_employees,Previous Rank,Revenues,Revenue cha
 107,Hengli Group,China,90555,181,80588,43.4%,2076.8,256.3%,33773.3
 108,China Energy Investment,China,331373,107,80498,-1.8%,4264.1,20.7%,251272
 109,Sinochem Group,China,60049,88,80376,-10.1%,473.4,-32.5%,78799.4
-110,Electricite de France,france,161522,110,80278,-1.4%,5769.8,315.4%,340406
+110,Electricite de France,France,161522,110,80278,-1.4%,5769.8,315.4%,340406
 111,China Baowu Steel Group,China,196378,149,79932,20.5%,2901.3,33.8%,123777.1
 112,People's Insurance Co. of China,China,198951,121,79788,5.9%,3204,64.1%,162687
 113,ENI,Italy,32053,83,79513,-12.4%,165.7,-96.6%,138549.1
@@ -226,7 +226,7 @@ Rank,Company Name,Country,Number_of_employees,Previous Rank,Revenues,Revenue cha
 225,Novartis,Switzerland,103914,201,50486,-5%,11732,-7%,118370
 226,Tokio Marine Holdings,Japan,41101,224,50270,1.8%,2389.2,-3.5%,233681.6
 227,Korea Electric Power,South Korea,47452,193,50257,-7.9%,-2012.7,-,170888
-228,Vodafone Group,Britain,95219,217,49960,-1.1%,-1022,-,185455.7
+228,Vodafone Group,United Kingdom,95219,217,49960,-1.1%,-1022,-,185455.7
 229,Kia Motors,South Korea,52448,227,49894,1.3%,1567.4,49.2%,47863.7
 230,Continental,Germany,241458,205,49783,-5%,-1371.1,-140.1%,47778.5
 231,American International Group,United States,46000,235,49746,5%,3348,-,525064
@@ -278,7 +278,7 @@ Rank,Company Name,Country,Number_of_employees,Previous Rank,Revenues,Revenue cha
 277,Hanwha,South Korea,57967,261,43258,-2.4%,77.2,-81.9%,157646.1
 278,Liberty Mutual Insurance Group,United States,45000,278,43228,1.3%,1044,-51.7%,133644
 279,Accenture,Ireland,492000,298,43215,5.4%,4779.1,17.7%,29789.9
-280,Rio Tinto Group,Britain,46007,303,43165,6.5%,8010,-41.3%,87802
+280,Rio Tinto Group,United Kingdom,46007,303,43165,6.5%,8010,-41.3%,87802
 281,Sinomach,China,146792,250,43122,-5.1%,452.3,-7.3%,55071.4
 282,GlaxoSmithKline,United Kingdom,99437,296,43073,4.8%,5927.4,22.7%,105552.1
 283,Dow,United States,36500,-,42951,-,-1359,-,60524
@@ -342,7 +342,7 @@ Rank,Company Name,Country,Number_of_employees,Previous Rank,Revenues,Revenue cha
 341,Tech Data,United States,15000,330,36998,-0.6%,374.5,10%,13268.6
 342,ING Group,Netherlands,55063,310,36990,-6.6%,4368.5,-22.3%,997274.8
 343,Jiangxi Copper,China,25333,358,36980,6.1%,169.5,29%,22646.2
-344,J. Sainsbury,Britain,111900,321,36831,-3.2%,193.1,-32.8%,34667
+344,J. Sainsbury,United Kingdom,111900,321,36831,-3.2%,193.1,-32.8%,34667
 345,World Fuel Services,United States,5500,309,36819,-7.4%,178.9,40.1%,5992.4
 346,Power Corp. of Canada,Canada,30600,331,36810,-0.8%,874.2,-15.4%,368078.1
 347,Honeywell International,United States,113000,290,36709,-12.2%,6143,-9.2%,58679
@@ -444,7 +444,7 @@ Rank,Company Name,Country,Number_of_employees,Previous Rank,Revenues,Revenue cha
 443,Xinjiang Guanghui Industry Investment,China,77400,439,28711,0.5%,89.8,-34.5%,39224.4
 444,Linde,United Kingdom,79886,-,28677,87.6%,2285,-47.8%,86612
 445,Sumitomo Electric Industries,Japan,283910,437,28578,-0.3%,668.9,-37.2%,28541.8
-446,International Airlines Group,Britain,66034,435,28548,-0.9%,1919.5,-43.6%,40025.9
+446,International Airlines Group,United Kingdom,66034,435,28548,-0.9%,1919.5,-43.6%,40025.9
 447,GS Caltex,South Korea,3283,376,28541,-13.6%,388.4,-39.3%,17666.5
 448,Migros Group,Switzerland,90863,431,28540,-1.9%,348.3,-31.9%,66220
 449,Huaxia Life Insurance,China,500000,442,28494,-,122,-69.4%,84176
