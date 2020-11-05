@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 400,
   "height": 300,
-  "title": "Country revenues",
+  "title": "Total revenues of Fortune 500 companies by country",
   "data": {
     "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/data/Fortune%20500%20Global%20List%202020_Someka_V1_pureData.csv"
   },
@@ -40,7 +40,7 @@
       "type": "quantitative",
       "axis": {"tickCount": 4},
       "scale": {"type": "log", "domain": [10000, 100000000]},
-      "title": "Total Revenue"
+      "title": "Total Revenue (US$)"
     },
     "color": {
       "field": "Continent",
