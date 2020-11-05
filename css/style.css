@@ -2,8 +2,8 @@
   background: rgb(112, 135, 153);
 }
 
-.h1text {
-  margin: auto;
+h1 {
+  margin: auto 10em;
   font-family: "Times New Roman", serif
 }
 
