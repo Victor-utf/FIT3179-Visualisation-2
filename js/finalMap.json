@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Map of Fortune 500 companies",
+  "title": "Total revenue of Fortune 500 companies as proportion of GDP",
   "width": 400,
   "height": 300,
   "projection": {"type": "equirectangular"},
@@ -31,18 +31,19 @@
        },
        "default": 1
     },
-    {"calculate": "datum.Revenue_total/datum.GDP", "as": "prop"}
+    {"calculate": "datum.Revenue_total/datum.GDP", "as": "Prop"}
   ],
    "mark": {"type": "geoshape"},
    "encoding": {
       "color": {
-        "field": "prop",
+        "field": "Prop",
         "type": "quantitative",
-        "scale": {"type": "log"}
+        "scale": {"type": "log", "domain": [0.01, 1]}
       },
       "tooltip" : [
         {"field": "properties.name", "type": "nominal", "title": "Country"},
-        {"field": "Revenue_total", "type": "quantitative", "title": "Total Revenue (US$ billions)"}
+        {"field": "Revenue_total", "type": "quantitative", "title": "Total Revenue (US$ billions)"},
+        {"field": "Prop", "type": "quantitative", "title": "Proportion"}
       ]
    }
 }
