@@ -20,8 +20,8 @@
       
       "encoding": {
         "x": {
-          "field": "R2", "type": "ordinal", "title": "Rank", 
-          "scale": {"type":  "linear", "range": [10, 790]}
+          "field": "R2", "type": "quantitative", "title": "Rank", 
+          "scale": {"type":  "linear", "range": [10, 390]}
         },
         "y": {
           "aggregate": "mean",
