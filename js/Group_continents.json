@@ -65,8 +65,8 @@
         },
       "legend": {
         "orient": "none",
-        "legendX": 620,
-        "legendY": 300
+        "legendX": 310, 
+        "legendY": 150
       }
       },
       "tooltip": [
