@@ -1,3 +1,13 @@
 .blank {
   background: rgb(112, 135, 153);
 }
+
+.blockText {
+  margin: 2em auto;
+  width: 12em
+}
+
+.blockVis {
+  margin: 2em auto
+}
+   
