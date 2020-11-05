@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Map of Fortune 500 companies",
-  "width": 800,
-  "height": 600,
+  "width": 400,
+  "height": 300,
   "projection": {"type": "equirectangular"},
   "data": {
     "url": "https://raw.githubusercontent.com/Victor-utf/FIT3179-Visualisation-2/main/worldMap.geo.json",
