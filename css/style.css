@@ -3,12 +3,14 @@
 }
 
 .h1text {
-  margin: auto
+  margin: auto;
+  font-family: "Times New Roman", serif
 }
 
 .blockText {
   margin: 2em auto;
-  width: 12em
+  width: 12em;
+  font-family: Helvetica, sans-serif
 }
 
 .blockVis {
