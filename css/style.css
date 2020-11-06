@@ -3,7 +3,7 @@
 }
 
 h1 {
-  margin: auto 10em;
+  margin: auto 6em;
   font-family: "Times New Roman", serif
 }
 
@@ -21,9 +21,7 @@ h1 {
 
 .blockVis {
   display:block;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: 2em;
-  width: 25%
+  margin: 2em;
+  width: 35%
 }
    
